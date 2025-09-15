@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>Blog - Beranda</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9fbfd;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      text-align: center;
+      background-color: #1a73e8;
+      color: white;
+      padding: 20px 0;
+      border-bottom: 5px solid #ff69b4;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2rem;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    main {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .blog-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+    .blog-card img.cover {
+      max-width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+    }
+    .author-box {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      margin-top: 20px;
+      text-align: left;
+    }
+    .author-box img {
+      width: 120px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 12px;
+      border: 3px solid #ff69b4;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+    }
+    .label-section {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .label-section h3 {
+      color: #1a73e8;
+      margin-bottom: 20px;
+    }
+    .label-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 15px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .label-item {
+      background: #eef4fa;
+      padding: 15px;
+      border-radius: 10px;
+      font-weight: bold;
+      color: #1a3d7c;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .label-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      padding: 10px;
+      background: #1a73e8;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>🌸 Blog Saya 🌸</h1>
+    <nav>
+      <a href="index.html">🏠 Blog</a> |
+      <a href="pendaftaran.html">📝 Form Pendaftaran</a> |
+      <a href="nilai.html">📊 Tabel Nilai</a> |
+      <a href="cv.html">👤 CV</a>
+    </nav>
+  </header>
+
+  <!-- Konten Utama -->
+  <main>
+    <article class="blog-card">
+      <img src="https://i.pinimg.com/1200x/7d/66/04/7d6604111a2fb44b73a4bc8b643e479d.jpg" 
+           alt="Gambar Blog 1" class="cover">
+      <h2><a href="detail.html" style="text-decoration:none; color:#1a73e8;">✨ Judul Blog Pertama: Cara Belajar Efektif ✨</a></h2>
+
+      <div class="author-box">
+        <img src="hlgself2.jpg" alt="Foto Author">
+        <div>
+          <p><b>Penulis:</b> Helga Sipayung</p>
+          <p><b>Tanggal:</b> 2025-09-01</p>
+          <p><b>Label:</b> <i>Belajar, Produktivitas, Pendidikan</i></p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Daftar Label -->
+    <aside class="label-section">
+      <h3>📌 Daftar Label</h3>
+      <div class="label-grid">
+        <div class="label-item">📖 Belajar</div>
+        <div class="label-item" style="background:#f7f1f8;color:#6a1b4d;">⚡ Produktivitas</div>
+        <div class="label-item" style="background:#eef9f0;color:#145a32;">🎓 Pendidikan</div>
+        <div class="label-item" style="background:#fff8f0;color:#a65e00;">🌐 Web</div>
+        <div class="label-item" style="background:#fdfdf2;color:#4b3832;">📚 Tutorial</div>
+        <div class="label-item" style="background:#f2f6ff;color:#0b3d91;">🛠 Project</div>
+      </div>
+    </aside>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Blog Saya</p>
+  </footer>
+
+</body>
+</html>

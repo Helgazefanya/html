@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <title>Form Pendaftaran</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      background-color: #fffaf0;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      background-color: #ffefdc;
+      padding: 20px 10px;
+      border-bottom: 3px solid #ff4500;
+    }
+
+    header h1 {
+      color: #ff4500;
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    nav a {
+      text-decoration: none;
+      margin: 0 10px;
+      font-weight: bold;
+      color: #1a73e8;
+    }
+
+    nav a:hover {
+      color: #ff4500;
+      text-decoration: underline;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px 0;
+    }
+
+    form {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0px 4px 10px rgba(0,0,0,0.15);
+      max-width: 500px;
+      width: 90%;
+    }
+
+    form p {
+      margin-bottom: 15px;
+    }
+
+    label, input, textarea {
+      font-size: 1rem;
+    }
+
+    input[type="text"], 
+    input[type="date"], 
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 10px;
+      box-sizing: border-box;
+      margin-top: 5px;
+    }
+
+    input[type="checkbox"], 
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+
+    input[type="reset"],
+    input[type="submit"] {
+      background-color: #ff4500;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: bold;
+      margin: 5px;
+      transition: background-color 0.3s ease;
+    }
+
+    input[type="reset"]:hover,
+    input[type="submit"]:hover {
+      background-color: #e63c00;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 30px;
+      border-top: 3px solid #ff4500;
+      padding: 10px;
+      background-color: #ffefdc;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>📝 Form Pendaftaran</h1>
+    <nav>
+      <a href="index.html">🏠 Beranda</a> |
+      <a href="pendaftaran.html">📋 Form Pendaftaran</a> |
+      <a href="nilai.html">📊 Tabel Nilai</a> |
+      <a href="cv.html">📄 Curriculum Vitae</a>
+    </nav>
+  </header>
+
+  <main>
+    <form action="#" method="post">
+      <p>
+        <label>Nama Lengkap:<br>
+          <input type="text" name="nama" required>
+        </label>
+      </p>
+
+      <p>
+        <label>Jenis Kelamin:</label><br>
+        <label><input type="radio" name="gender" value="Laki-laki"> Laki-laki</label>
+        <label><input type="radio" name="gender" value="Perempuan"> Perempuan</label>
+      </p>
+
+      <p>
+        <label>Tempat Lahir:<br>
+          <input type="text" name="tempat">
+        </label>
+      </p>
+
+      <p>
+        <label>Tanggal Lahir:<br>
+          <input type="date" name="tanggal">
+        </label>
+      </p>
+
+      <p>
+        <label>Hobi:</label><br>
+        <label><input type="checkbox" name="hobi" value="Membaca"> Membaca</label>
+        <label><input type="checkbox" name="hobi" value="Olahraga"> Olahraga</label>
+        <label><input type="checkbox" name="hobi" value="Musik"> Musik</label>
+      </p>
+
+      <p>
+        <label>Password:<br>
+          <input type="password" name="password">
+        </label>
+      </p>
+
+      <p>
+        <label><input type="checkbox" name="setuju" required> Saya menyetujui syarat dan ketentuan</label>
+      </p>
+
+      <p style="text-align:center;">
+        <input type="reset" value="🔄 Reset">
+        <input type="submit" value="🚀 Submit">
+      </p>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Blog Saya</p>
+  </footer>
+</body>
+</html>
